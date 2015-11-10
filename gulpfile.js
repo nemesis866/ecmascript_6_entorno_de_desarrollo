@@ -9,7 +9,9 @@ var gulp = require('gulp'),
 gulp.task('build', function (){
 	var b = browserify({
     	entries: ['./app/es6/es6.js'],
-    	transform: [babelify]
+    	transform: [babelify.configure({
+    		presets: ['es2015']
+    	})]
     });
 
     return b.bundle()
