@@ -39,7 +39,7 @@ El proyecto compilara el código ES6 a ES5 ejecutando el siguiente comando.-
 npm run dev
 ```
 
-Nota.- El código se compilara cada vez que detecte un cambio en el archivo es6.js.
+Nota.- El código se compilara cada vez que detecte un cambio en el archivo es6.js, en caso de detectar un error de sintaxis en la compilación, el archivo no compilara hasta que sea corregido.
 
 ## Funcionamiento
 
