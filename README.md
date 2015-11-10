@@ -9,6 +9,16 @@ La implementación del estandar ES6 muy pronto estara completa en los navegadore
 
 En este repositorio encontraras un entorno de desarrollo para realizar pruebas con ES6, se trara de la union de varias librerias que compila el código de ES6 a ES5.
 
+En la rama developer de este repositorio trabajamos con código ES6 en nuestro archivo gulpfile.js, es posible a dos cosas.-
+
+1.- Instalar de forma global la dependencia babel.-
+
+```js
+npm i - g babel
+```
+
+2.- En lugar de utilizar el archivo gulpfile.js, utilizamos gulfile.babel.js
+
 ## Como empezar
 
 1.- Descarga o clona este repositorio en tu ordenador.

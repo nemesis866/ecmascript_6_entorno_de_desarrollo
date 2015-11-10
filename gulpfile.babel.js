@@ -7,11 +7,16 @@ import source from 'vinyl-source-stream';
 
 // Tarea para compilar de ES6 a ES5
 gulp.task('build', () => {
-	return browserify({
+	const b = browserify({
     	entries: ['./app/es6/es6.js'],
     	transform: [babelify]
-    }).bundle()
-    .on('error', (err) => console.log(err);)
+    })
+
+    return b.bundle()
+    .on('error', (err) => {
+    	console.log(err.message);
+    	this.emit('end');
+    })
 	.pipe(source('es5.js'))
 	.pipe(buffer())
 	.pipe(gulp.dest('./app/es5/'));
