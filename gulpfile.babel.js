@@ -1,26 +1,24 @@
 // Importamos las dependencias
-var gulp = require('gulp'),
-	browserify = require('browserify'),
-	babelify = require('babelify'),
-	buffer = require('vinyl-buffer'),
-	source = require('vinyl-source-stream');
+import gulp from 'gulp';
+import browserify from 'browserify';
+import babelify from 'babelify';
+import buffer from 'vinyl-buffer';
+import source from 'vinyl-source-stream';
 
 // Tarea para compilar de ES6 a ES5
-gulp.task('build', function (){
+gulp.task('build', () => {
 	return browserify({
     	entries: ['./app/es6/es6.js'],
     	transform: [babelify]
     }).bundle()
-    .on('error', function (err) {
-    	console.log(err)
-    })
+    .on('error', (err) => console.log(err);)
 	.pipe(source('es5.js'))
 	.pipe(buffer())
 	.pipe(gulp.dest('./app/es5/'));
 });
 
 // Tarea para estar a la escucha de cambios
-gulp.task('watch', function (){
+gulp.task('watch', () => {
 	gulp.watch(['./app/es6/es6.js'], ['build']);
 });
 

@@ -12,7 +12,8 @@ En este repositorio encontraras un entorno de desarrollo para realizar pruebas c
 ## Como empezar
 
 1.- Descarga o clona este repositorio en tu ordenador.
-2.- Instala las dependencias del proyecto
+
+2.- Instala las dependencias del proyecto.
 
 ```js
 npm install
