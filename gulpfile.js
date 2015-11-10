@@ -7,12 +7,16 @@ var gulp = require('gulp'),
 
 // Tarea para compilar de ES6 a ES5
 gulp.task('build', function (){
-	return browserify({
+	var b = browserify({
     	entries: ['./app/es6/es6.js'],
     	transform: [babelify]
-    }).bundle()
+    });
+
+    return b.bundle()
     .on('error', function (err) {
-    	console.log(err)
+    	console.log(err.message);
+    	
+    	this.emit('end');
     })
 	.pipe(source('es5.js'))
 	.pipe(buffer())

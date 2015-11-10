@@ -1,1 +1,1 @@
-var hello = 'holass';
+// Aqui va el código ES6 Feliz codigo :)
