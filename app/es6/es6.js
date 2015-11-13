@@ -1,3 +1,12 @@
-// Aqui va el código ES6 - Feliz código :)
+// Aqui va el código ES6 Feliz codigo :)
 
-"use strict";
+(function (){
+	// Código de prueba
+
+	if(true){
+		let x = 10;
+		console.log(x);
+	}
+
+	console.log(x);
+})();
