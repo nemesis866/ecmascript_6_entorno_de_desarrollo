@@ -1,1 +1,3 @@
-// Aqui va el código ES6 Feliz codigo :)
+// Aqui va el código ES6 - Feliz código :)
+
+"use strict";
