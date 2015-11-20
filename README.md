@@ -13,7 +13,7 @@ En este repositorio encontraras un entorno de desarrollo para realizar pruebas c
 
 1.- Descarga o clona este repositorio en tu ordenador.
 
-2.- Instala las dependencias del proyecto.
+2.- Instala las dependencias del proyecto con la siguiente instrucción.-
 
 ```js
 npm install
@@ -31,15 +31,26 @@ Para encender el servidor ejecuta el comando.-
 npm start
 ```
 
+Nota.- Esta opción solo corre el servidor, no compila el código con estandar ES6.
+
 ## Compilar código ES6 a ES5
 
-El proyecto compilara el código ES6 a ES5 ejecutando el siguiente comando.-
+El proyecto compilara el código ES6 a ES5 ejecutando el siguiente la siguiente instrucción.-
 
 ```js
 npm run dev
 ```
 
 Nota.- El código se compilara cada vez que detecte un cambio en el archivo es6.js, en caso de detectar un error de sintaxis en la compilación, el archivo no compilara hasta que sea corregido.
+
+Esta opción cuenta con un servidor corriendo en la url.-
+
+http://127.0.0.1:3000
+
+El navegador se recargara automaticamente en los siguientes casos.-
+
+* Cuando detecte cambios en el archivo index.html.
+* Cuando detecte cambios en el archivo es6.js.
 
 ## Funcionamiento
 
